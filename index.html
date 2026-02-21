@@ -3,287 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>スナック カラオケ恋さん | 横浜市栄区</title>
+  <title>カラオケ恋さん | 横浜市栄区桂台西のアットホームなスナック系カラオケ</title>
   <meta name="description" content="横浜市栄区桂台西のスナック寄りカラオケ店『カラオケ恋さん』。夜の電話予約、昼の貸切、全テーブルデンモク完備。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #f8f3e8;
-      --bg-soft: #fffdf7;
-      --card: #fffaf1;
-      --ink: #2b221b;
-      --sub: #5f4f43;
-      --accent: #d44a1f;
-      --line: rgba(95, 79, 67, 0.24);
-      --shadow: 0 6px 18px rgba(43, 34, 27, 0.12);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: "Zen Kaku Gothic New", sans-serif;
-      color: var(--ink);
-      line-height: 1.65;
-      background:
-        linear-gradient(180deg, #fffdf7, #f8f3e8 50%, #f2e9d8);
-      min-height: 100vh;
-    }
-
-    .wrap {
-      width: min(1100px, 92%);
-      margin: 0 auto;
-    }
-
-    .hero {
-      padding: 5.2rem 0 2.6rem;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 1.3rem;
-      align-items: stretch;
-    }
-
-    .panel {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 1.4rem;
-      box-shadow: var(--shadow);
-    }
-
-    .tag {
-      display: inline-block;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 0.25rem 0.8rem;
-      color: #6f5d50;
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: #fff;
-    }
-
-    h1, h2 {
-      font-family: "Zen Kaku Gothic New", sans-serif;
-      letter-spacing: 0.01em;
-    }
-
-    h1 {
-      margin: 0.85rem 0 0;
-      font-size: clamp(2rem, 5.2vw, 4rem);
-      line-height: 1.2;
-    }
-
-    .lead {
-      margin: 1rem 0 0;
-      color: var(--sub);
-      max-width: 36ch;
-      font-size: clamp(1rem, 1.9vw, 1.18rem);
-    }
-
-    .btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-
-    .btn {
-      text-decoration: none;
-      color: #fff;
-      background: var(--accent);
-      border-radius: 12px;
-      padding: 0.82rem 1.1rem;
-      font-weight: 700;
-      transition: transform 0.2s ease;
-    }
-
-    .btn.sub {
-      background: transparent;
-      color: #6d4d3d;
-      border: 1px solid var(--line);
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .hero-photo {
-      width: 100%;
-      height: 100%;
-      min-height: 320px;
-      border-radius: 10px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .point-list {
-      margin: 1rem 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 0.45rem;
-      color: var(--sub);
-    }
-
-    .point-list li::before {
-      content: "● ";
-      color: var(--accent);
-    }
-
-    main section {
-      padding: 0 0 1.3rem;
-    }
-
-    .grid3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .grid2 {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 1rem;
-    }
-
-    h2 {
-      margin: 0 0 0.8rem;
-      font-size: clamp(1.35rem, 2.9vw, 2rem);
-    }
-
-    .mini {
-      color: var(--sub);
-      font-size: 0.96rem;
-      margin: 0;
-    }
-
-    .hours table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 0.45rem;
-    }
-
-    .hours td {
-      padding: 0.44rem 0;
-      border-bottom: 1px solid rgba(43, 34, 27, 0.12);
-      font-size: 0.96rem;
-    }
-
-    .hours td:last-child {
-      text-align: right;
-      font-weight: 700;
-    }
-
-    .map {
-      overflow: hidden;
-      border-radius: 10px;
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
-
-    .map iframe {
-      width: 100%;
-      height: 350px;
-      display: block;
-      border: 0;
-    }
-
-    .footer {
-      padding: 1.8rem 0 2.8rem;
-      color: #7a6658;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 920px) {
-      .hero-grid,
-      .grid3,
-      .grid2 {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 3.8rem;
-      }
-
-      .hours td:last-child {
-        text-align: left;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero wrap">
-    <div class="hero-grid">
-      <div class="panel">
-        <span class="tag">Snack & Karaoke</span>
-        <h1>カラオケ恋さん</h1>
-        <p class="lead">横浜・桂台西で、歌と会話をゆっくり楽しめる地域密着のスナック系カラオケ店。気軽にふらっと立ち寄れる雰囲気です。</p>
-        <ul class="point-list">
-          <li>テーブル5卓 / 全台デンモク設置</li>
-          <li>夜は4〜5名様から電話予約</li>
-          <li>昼間の貸切予約にも対応</li>
-        </ul>
-        <div class="btns">
-          <a class="btn" href="https://tabelog.com/kanagawa/A1401/A140309/14071914/" target="_blank" rel="noopener noreferrer">食べログ</a>
-          <a class="btn sub" href="https://share.google/WNjb9KTkDFMrRGVli" target="_blank" rel="noopener noreferrer">Google情報</a>
-        </div>
-      </div>
-      <div class="panel">
-        <img class="hero-photo" src="https://source.unsplash.com/1200x800/?karaoke,microphone,japan,bar" alt="カラオケ店のフリー素材イメージ" loading="lazy" />
-      </div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#concept">CONCEPT</a>
+      <a href="#information">INFORMATION</a>
+      <a href="#access">ACCESS</a>
+      <a href="#reserve" class="cta">予約・お問合せ</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="hero-slide hero-slide--1"></div>
+      <div class="hero-slide hero-slide--2"></div>
+      <div class="hero-slide hero-slide--3"></div>
+    </div>
+    <div class="hero-content">
+    <h1>カラオケ恋さん</h1>
+    <p class="tagline">歌って飲んで、横浜・桂台西で心安らぐ止まり木</p>
+    <p class="sub">全テーブルデンモク完備のスナック系カラオケ</p>
+    <a class="tel" href="tel:0458939177">045-893-9177</a>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="grid3">
-      <article class="panel">
-        <h2>ご利用案内</h2>
-        <p class="mini">夜は電話予約制（4〜5名様〜）でご案内しています。夜間料金での営業となります。</p>
-      </article>
-      <article class="panel">
-        <h2>昼のご予約</h2>
-        <p class="mini">13:00〜17:00の時間帯は、昼間貸切のご相談を承っています。ご希望日時は事前にお問い合わせください。</p>
-      </article>
-      <article class="panel">
-        <h2>アクセス</h2>
-        <p class="mini">港南台駅からバス約10分。駐車場は2台分ございます。</p>
-      </article>
-    </section>
+  <section id="concept" class="concept">
+    <p class="section-label">CONCEPT</p>
+    <h2>店舗概要</h2>
+    <h3>一見さんでも肩肘張らずに過ごせる落ち着いた空間</h3>
+    <p>カラオケ恋さんは、横浜市栄区桂台西で親しまれているスナック寄りカラオケ店です。歌って飲んで、日頃の疲れを忘れられる場所。お一人様でも、グループでも、実家に帰ってきたような安心感と、楽しい会話を提供いたします。初めての方もどうぞお気軽にお立ち寄りください。</p>
+    <p>横浜・桂台西で愛されるアットホームなスナック系カラオケです。全テーブルにデンモク完備。気軽にふらっと立ち寄れる雰囲気で、素敵な夜をお過ごしください。</p>
+    <div class="concept-photo">
+      <img src="img1/Gemini_Generated_Image_9y0czp9y0czp9y0c.png" alt="店内の様子" loading="lazy" />
+    </div>
+  </section>
 
-    <section class="grid2">
-      <article class="panel hours">
-        <h2>営業時間</h2>
-        <table>
-          <tr><td>火曜日</td><td>13:00〜17:00</td></tr>
-          <tr><td>水曜日</td><td>13:00〜17:00</td></tr>
-          <tr><td>木曜日</td><td>13:00〜17:00</td></tr>
-          <tr><td>金曜日</td><td>13:00〜17:00</td></tr>
-          <tr><td>土曜日</td><td>13:00〜17:00</td></tr>
-          <tr><td>定休日</td><td>日曜・月曜</td></tr>
-        </table>
-      </article>
+  <section id="information">
+    <p class="section-label">INFORMATION</p>
+    <h2>ご案内</h2>
+    <table class="info-table">
+      <tr><th>営業時間</th><td>火〜土曜日：13:00 〜 17:00（昼）<br />夜は電話予約制</td></tr>
+      <tr><th>定休日</th><td>日曜・月曜</td></tr>
+      <tr><th>サービス</th><td>スナック系カラオケ（全テーブルデンモク）</td></tr>
+      <tr><th>所在地</th><td>〒247-0035 神奈川県横浜市栄区桂台西2丁目3-3</td></tr>
+    </table>
 
-      <article class="panel">
-        <h2>店舗情報</h2>
-        <p class="mini">〒247-0035<br />神奈川県横浜市栄区桂台西2丁目3-3</p>
-        <p class="mini">「お店に行ったら笑ってくる」そんな空気感を大切にしたお店です。</p>
-      </article>
-    </section>
+    <div id="reserve" class="reserve-box">
+      <h3>ご予約・お問合せ</h3>
+      <p>お席のご予約や、貸切のご相談など、お気軽にお電話ください。</p>
+      <a class="reserve-tel" href="tel:0458939177">045-893-9177</a>
+      <p class="reserve-note">※混雑時はお電話に出られない場合がございます。</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>マップ</h2>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.0556987795685!2d139.563538!3d35.354264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184504806fb45b%3A0x9aad242e7ee786d4!2z5oGL44GV44KT!5e0!3m2!1sja!2sjp!4v1771061815004!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
-  </main>
+  <section id="access">
+    <p class="section-label">ACCESS</p>
+    <h2>アクセス</h2>
+    <p class="access-address">〒247-0035 神奈川県横浜市栄区桂台西2丁目3-3</p>
+    <p class="access-route">港南台駅からバス約10分。駐車場2台あり。</p>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.0556987795685!2d139.563538!3d35.354264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184504806fb45b%3A0x9aad242e7ee786d4!2z5oGL44GV44KT!5e0!3m2!1sja!2sjp!4v1771061815004!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 
-  <footer class="footer wrap">
-    <p>© カラオケ恋さん</p>
+  <footer>
+    <p>カラオケ恋さん</p>
+    <p>© Karaoke Koisan. All Rights Reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
