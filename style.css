@@ -94,9 +94,8 @@ body {
   z-index: 1;
 }
 
-.hero-slide--1 { background-image: url('img1/Gemini_Generated_Image_9y0czp9y0czp9y0c.png'); }
-.hero-slide--2 { background-image: url('img1/Gemini_Generated_Image_kbjp4kkbjp4kkbjp.png'); }
-.hero-slide--3 { background-image: url('img1/Gemini_Generated_Image_vwwdayvwwdayvwwd.png'); }
+.hero-slide--1 { background-image: url('img1/Gemini_Generated_Image_kbjp4kkbjp4kkbjp.png'); }
+.hero-slide--2 { background-image: url('img1/Gemini_Generated_Image_vwwdayvwwdayvwwd.png'); }
 
 .hero-slideshow::after {
   content: '';
