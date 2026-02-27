@@ -82,8 +82,8 @@ body {
 .hero-slide {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: 125%;
+  background-position: 42% 32%;
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -217,9 +217,10 @@ section p {
 
 .concept-photo img {
   width: 100%;
-  height: auto;
+  height: 520px;
   display: block;
   object-fit: cover;
+  object-position: 42% 35%;
 }
 
 /* INFORMATION */
